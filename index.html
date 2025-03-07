@@ -190,9 +190,16 @@
 </head>
 
 <body>
-  <audio autoplay="autopaly">
-    <source src="song.mp3" type="audio/mp3" />
-  </audio>
+  <audio id="myAudio" loop src="audio/madhu.mp3" type="audio/mpeg"></audio>
+
+  <script>
+    document.addEventListener('click', function() {
+      var audio = document.getElementById('myAudio');
+      if (audio.paused) {
+        audio.play();
+      }
+    });
+  </script>
  
 
   <div class="container">
